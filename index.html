@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	  <title>Netflix-watch TV shows Online,watch Movies Online</title>
+<style>
+
+
+	.row{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+
+}
+.row h2{
+  color: red;
+  letter-spacing: 2px;
+
+}
+.nav{
+  width: 100% ;
+  height: 220px;
+  overflow: hidden;
+  padding: 10px 0;
+  scroll-behavior: smooth;
+}
+.nav .nav-bar{
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+.nav-bar .column{
+  min-width: 25%;
+  height: 100%;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.column img{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  object-fit: cover;
+}
+
+
+
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
+
+
+
+
+
+		@media (max-width: 1100px){
+		.logo{
+			margin-left: 50px;
+		}
+		.search{
+			margin-right: 10px;
+
+		}
+		ul{
+			margin-right: 10px;
+		}
+
+	}
+	@media(max-width: 960px){
+		ul{
+			position: fixed;
+			top: 0;
+			left: 0;
+			background: #111;
+			width: 100%;
+			height: 100vh;
+			z-index: 99;
+			padding-top: 80px;
+			text-align: center;
+			overflow: auto;
+			transition: 0.5s linear;
+		}
+		ul li{
+			display: inline-block;
+			padding: 20px 50px;
+
+		}
+		.menu-close..menu-open{
+			display: inline-block;
+			cursor: pointer;
+
+		}
+	}
+	#chk1:checked ~ ul{
+		left: 0;
+	}
+	#chk1{
+		display: none;
+
+	}
+	@media (max-width: 760px){
+		.row .nav{
+			height: auto;
+		}
+		.nav .nav-bar{
+			height: auto;
+			flex-wrap: wrap ;
+			transition: 0.5s linear;
+		}
+		.column{
+			width: 25%;
+		}
+		
+
+	}
+
+	@media(max-width: 550px){;
+		.search{
+			position: fixed;
+			top: 20px;
+			z-index: 99;
+			left: -100%;
+			transform: translatex(-50%);
+			transition: 0.5s linear;
+		}
+
+		}
+		#chk1:checked ~ .search{
+			left: 50%;
+		}
+
+
+
+
+</style>
+</head>
+<body>
+	<header>
+	<div class="logo">
+		<h2>Netflix</h2>
+	</div>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<label for="chk1" class="menu-close">
+				<i class="fa fa-times" aria-hidden="true"></i>
+		</label>
+
+	</ul>
+		<div class="search">
+			<input type="text" name="search"id="srch" required placeholder="enter your search">
+			<button type="submit">search</button>
+			<label for="chk1" class="menu-close">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			
+			</label>
+
+
+		</div>
+</header>
+
+<section>
+	<div class="container">
+		<div class="slides">
+			<img src="https://www.tvinsider.com/wp-content/uploads/2021/08/nightbooks-netflix-movie-poster-e1629399938301-770x433.jpg"alt="">
+			<div class="content">
+				<h2>Flim Title 01</h2>
+				<p>this is movie</p>
+				<a href="#">
+					<i class="fa fa-play" aria-hidden="true"></i>
+					Watch Free
+				</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img src="https://i2.wp.com/serialstars.in/wp-content/uploads/2020/06/Guilty-2020-Netflix-Movie-Cast-Wiki-Crew-Trailer-Release-Date-Actor-Actress-Kiara-Advani-Watch-Online-Free-Download.jpg"alt="">
+			<img src="" alt="">
+			<div class="content">
+				<h2>Flim Title 02</h2>
+				<p>this is movie</p>
+				<a href="#">
+					<i class="fa fa-play" aria-hidden="true"></i>
+					Watch Free
+				</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img src="http://hityaflopmovieworld.com/wp-content/uploads/2020/11/Miss-India-Review.jpg"alt="">
+			<div class="content">
+				<h2>Flim Title 03</h2>
+				<p>this is movie</p>
+				<a href="#">
+					<i class="fa fa-play" aria-hidden="true"></i>
+					Watch Free
+				</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgqpG-Sv0SdUrML83pfPe7hrmRDikj_RWuyFVwwkCHtlMquRwTZKdljCDFj8kiLe9-mS8&usqp=CAU"alt="">
+			<div class="content">
+				<h2>Flim Title 04</h2>
+				<p>this is movie</p>
+				<a href="#">
+					<i class="fa fa-play" aria-hidden="true"></i>
+					Watch Free
+				</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img src="https://www.theouterhaven.net/wp-content/uploads/2017/03/C4MR92QXUAADICt.jpg"alt="">
+			<div class="content">
+				<h2>Flim Title 05</h2>
+				<p>this is movie</p>
+				<a href="#">
+					<i class="fa fa-play" aria-hidden="true"></i>
+					Watch Free
+				</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFCqhNvn1oneHd1t0Z5Eoz2Vaww9qKw9_qhaxJg_QWbyVEdXK5X6-FbUtEjQSeMi6jUU&usqp=CAU"alt="">
+			<div class="content">
+				<h2>Flim Title 01</h2>
+				<p>this is movie</p>
+				<a href="#">
+					<i class="fa fa-play" aria-hidden="true"></i>
+					Watch Free
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<h2>Recommend</h2>
+		<div class="nav">
+			<div class="nav-bar">
+				<div class="column">
+					<img src="https://occ-0-92-1723.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTv-ItFzlVzL0sLTGFhealSTfF-_YiX4SZ091bsyMbI5RitbHMLq41RMRgz7kACzVCzEjHJEkax2SCcUmwqYXVEW5qs.jpg?r=326"alt="">
+				</div>
+					<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_B_nCLHPUsZnJQ1I32p7yySWuvHe96441H-uTaCx5FWLENVr2j8GaQklibevxWJivYw&usqp=CAU"alt="">
+				</div>
+					<div class="column">
+					<img src="https://www.bollywoodbubble.com/wp-content/uploads/2021/06/Jagame-Thandhiram-1-1280x720.jpg"alt="">
+				</div>
+					<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfRjTPbNNKvQJij0pjvfwDcpBs-l8CDU6ag&usqp=CAU"alt="">
+				</div>
+					<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIMm9IbEcyHG0ytfsVbCvuXqwLhOoFTaB9Q&usqp=CAU"alt="">
+
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+		<div class="row">
+		<h2>Romance</h2>
+		<div class="nav">
+			<div class="nav-bar">
+				<div class="column">
+					<img src="https://highlifelowprofile.files.wordpress.com/2016/02/9-shows-coming-to-netflix-in-2016-you-need-to-know-about-10.jpg"alt="">
+				</div>
+					<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A1_DOtMSdlQ1ysYgxBqsCWfHH3EcV7UGeSNCFNhkFq99HjMuiZMVvfIdSa4_dTpk9dk&usqp=CAU"alt="">
+				</div>
+					<div class="column">
+					<img src="https://lh3.googleusercontent.com/BufqJHN2WbWJ7rPtbIF1YbdlB1SYeAxwcvka0R0T4CoiPVRQVqTBDkoMc8jJ7hZbX7IXT9fUdAucfg"alt="">
+				</div>
+					<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO8MlWbajncpcawEHGeQLsssLDvOHB7o4oTf2CPKbr57Lu6uTWMNvkml9hrJhhpm9NLeI&usqp=CAU"alt="">
+				</div>
+					<div class="column">
+					<img src="https://www.mydomaine.com/thmb/q2YGYO_Wv_L8xUEXATYRotGAE-g=/640x360/filters:no_upscale():max_bytes(150000):strip_icc()/AAAABTvyFp5EyGK66trM3m99k3SSzfuBtzi9vQaKsE9NM1jhyccCOcjg604mjmUu73EcFwFL0KOJi4WZa4qOPLIivA29TVrWf8rr_Lu_K8HKm_VG4rtM3DxK-0e2d9b42c73849789dd0ff6b162c5ac3.jpg"alt="">
+				</div>
+				
+			</div>
+		</div>
+			
+	</div>
+
+
+
+		<div class="row">
+		<h2>Thriller</h2>
+		<div class="nav">
+			<div class="nav-bar">
+				<div class="column">
+					<img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWUAINYbiLhI1OhVZHlXlGcQd3eQ6w_GQkdODQZWE7VprlytRrtqpaIp8mJAzlg4sGHQJNiBwEG9PD4zoZqj3DBZSpYjhBbpERw5GTa4jiPA-hi-frOjT_dJY2Fh.jpg?r=0b1"alt="">
+				</div>
+					<div class="column">
+					<img src="https://i.scdn.co/image/ab67706c0000bebbcc0f96581f2dc7ce08ee58fb"alt="">
+				</div>
+					<div class="column">
+					<img src="https://www.letsott.com/assets/uploads/posts/sightless.jpg"alt="">
+				</div>
+					<div class="column">
+					<img src="http://cdn.shopify.com/s/files/1/1183/1920/articles/Fatal_Affair_2020_-_USA_Netflix_Original_1024x1024.jpg?v=1595572159"alt="">
+				</div>
+				
+			</div>
+		</div>
+		
+	</div>
+
+
+
+
+		<div class="row">
+		<h2>Children</h2>
+		<div class="nav">
+			<div class="nav-bar">
+				<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaAXFS1xOXwbNmCZaKPF4iY-HNmp6BxhPhQMbgDuiZ0bM9SxpmrC4cmVjTCPkleM-3rxY&usqp=CAU"alt="">
+				</div>
+					<div class="column">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwUcB9gGHc3zCOuvBiHqZAxKEoAFwoECWDc-VE80t_RYdSmgRJONz7XY0Dy_TL_KC4Odo&usqp=CAU"alt="">
+				</div>
+					<div class="column">
+					<img src="https://images-na.ssl-images-amazon.com/images/I/81HT2H0kTPL.jpg"alt="">
+				</div>
+					<div class="column">
+					<img src="https://static.wixstatic.com/media/f14dd4_32d5d5a70cb84c13ab0909d02a029c74~mv2.jpg/v1/fill/w_1000,h_583,al_c,q_90,usm_0.66_1.00_0.01/f14dd4_32d5d5a70cb84c13ab0909d02a029c74~mv2.jpg"alt="">
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+
+		
+
+	
+
+
+
+
+</body>
+
+</html>
